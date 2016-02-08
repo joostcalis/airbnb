@@ -1,5 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
-
 body {
-  font-family: 'Source Code Pro', 'Courier', serif;
+  font-family: sans-serif;
 }
+
+h1 {
+	font-size: 32px;
+}
+
+h2 {
+	font-size: 24px;
+}
+

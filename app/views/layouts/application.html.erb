@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Airbnb</title>
+  <title>Welcome to Airbnb</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header class="jumbotron">
+		<h1 class="title">Fancy a visit?</h1>
+		<h2>Book now at Airbnb.com</h2>
+	</header>
+	<div class="container-fluid">
+
 
 <%= yield %>
 
+
+
+	</div><!-- End of container fluid -->
 </body>
 </html>
