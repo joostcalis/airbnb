@@ -1,0 +1,31 @@
+
+<body class="newpost">
+  <h1> This is our new page </h1>
+  <div class="postform">
+    <h4>New Post</h4>
+
+<%= form_for(@listing) do |f| %>
+
+<div>
+  <p><%= f.label :title %></p>
+<%= f.text_field :title %>
+</div>
+<div>
+  <p><%= f.label :location %></p>
+<%= f.text_field :location %>
+</div>
+<div>
+  <p><%= f.label :price %></p>
+<%= f.text_field :price %>
+</div>
+<div>
+  <p><%= f.label :description %></p>
+<%= f.text_field :description %>
+</div>
+
+<div>
+  <%= f.submit "Enter listing!" %>
+</div>
+<% end %>
+</div>
+</body>
