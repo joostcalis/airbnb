@@ -1,0 +1,27 @@
+<body class="newpost">
+  <h1> This is our new page </h1>
+  <div class="postform">
+    <h4>New Post</h4>
+
+<%= form_for(@user) do |f| %>
+
+<div>
+  <p><%= f.label :firstname %></p>
+<%= f.text_field :firstname %>
+</div>
+<div>
+  <p><%= f.label :lastname %></p>
+<%= f.text_field :lastname %>
+</div>
+<div>
+  <p><%= f.label :city %></p>
+<%= f.text_field :city %>
+</div>
+
+
+<div>
+  <%= f.submit "create account!" %>
+</div>
+<% end %>
+</div>
+</body>
