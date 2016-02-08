@@ -12,7 +12,10 @@ class ListingsController < ApplicationController
       render :new
     end
   end
-
+	
+  def show
+    	@listing = Listing.find(params[:id])
+  	end
 
   private
 
