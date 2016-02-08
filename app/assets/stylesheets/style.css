@@ -1,0 +1,47 @@
+header {
+	padding-left: 40px;
+}
+
+nav {
+	height: 60px;
+	background-color: #FE585C;
+	color: white;
+	padding-top: 20px;
+}
+
+nav li {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	padding-right: 30px;
+}
+
+footer {
+	background-color: #111;
+	color: white;
+	padding: 50px;
+}
+
+section {
+	background-color: white;
+}
+
+.footer-col {
+	padding: 50px;
+}
+
+.social li {
+	display: inline-block;
+	margin: 0px 20px 0 20px;
+}
+
+.social {
+	text-align: center;
+}
+
+.footer-row {
+	margin-left: 200px;
+	margin-right: 200px;
+}
