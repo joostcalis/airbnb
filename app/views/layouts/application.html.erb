@@ -7,17 +7,70 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<!-- Start navigation -->
+	<nav>
+		<ul>
+			<li>Sign up</li>
+			<li>Log in</li>
+			<li>Search</li>
+		</ul>
+	</nav>
+	<!-- Landing -->
 	<header class="jumbotron">
 		<h1 class="title">Fancy a visit?</h1>
 		<h2>Book now at Airbnb.com</h2>
 	</header>
-	<div class="container-fluid">
+	<!-- Start content -->
+	<section class="container-fluid main">
+
 
 
 <%= yield %>
 
 
 
-	</div><!-- End of container fluid -->
+	</section><!-- End of container fluid -->
+	<footer>
+		<div class="row">
+			<div class="col-md-4 footer-col">
+				<h4><strong>Airbnb.com</strong></h4>
+				<ul>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+				</ul>
+			</div>
+			<div class="col-md-4 footer-col">
+				<h4><strong>Ander kopje hier</strong></h4>
+				<ul>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+					<li>Link hier</li>
+				</ul>
+			</div>
+			<div class="col-md-4 footer-col">
+			<h4><strong>Adres</strong></h4>
+				<ul>
+					<li>Weetikveellaan 1234</li>
+					<li>Amsterdam</li>
+				</ul>
+			</div>
+		</div>
+		<div class="social row">
+			<ul>
+				<li>facebook</li>
+				<li>twitter</li>
+				<li>instagram</li>
+				<li>pinterest</li>
+				<li>google plus</li>
+			</ul>
+		</div>	
+	</footer>
 </body>
 </html>
