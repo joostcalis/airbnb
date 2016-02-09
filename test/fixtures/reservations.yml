@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guest_id: 
+  listing_id: 
+  start_date: 2016-02-09
+  end_date: 2016-02-09
+
+two:
+  guest_id: 
+  listing_id: 
+  start_date: 2016-02-09
+  end_date: 2016-02-09
