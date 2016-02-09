@@ -6,6 +6,7 @@
 	height: 200px;
 	width: 200px;
 	float: left;
+	margin-right: 20px
 }
 
 .listings-card {
@@ -15,4 +16,8 @@
 	ul {
 		list-style-type: none
 	}
+}
+
+.padding {
+	padding: 10px;
 }

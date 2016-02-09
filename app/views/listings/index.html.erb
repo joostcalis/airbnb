@@ -1,27 +1,20 @@
 <h2>Listings</h2>
 
-<p>
-   <%= link_to "new listing", new_listing_path %>
-   <%= link_to "new user", new_user_path %>
-</p>
+
+   <button class="btn btn-primary"><%= link_to "new listing", new_listing_path %>New</button>
+   <button class="btn btn-primary"><%= link_to "new user", new_user_path %>New</button>
 
 <div class="list-group">
 
 	<% @listings.each do |listing| %>
 		
-		<div class="col-md-6 list-group-item">
-
-						<img class="listing-photo" src="http://www.recordshred.com/wp-content/themes/juiced-recordShred/img/thumbnail-default.jpg">
-					
-					<ul>
-
-					 	<li><%= link_to listing.title, listing %></li>
-					   	<li><%= listing.location %></li>
-					   	<li><%= listing.price%></li>
-					   	<li><%= listing.description %></li>
-					 	
-					</ul>
-
+		<div class="col-md-6 list-group-item ">
+			
+			<img class="listing-photo" src="http://www.recordshred.com/wp-content/themes/juiced-recordShred/img/thumbnail-default.jpg">
+		 	<h3><%= link_to listing.title, listing %></h3>
+		   	<h3><%= listing.location %></h3>
+		   	<h4><%= listing.price%></h4>
+		   	<h4><%= listing.description %></h4>
 
 		</div>
 	
