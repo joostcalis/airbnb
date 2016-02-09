@@ -1,2 +1,3 @@
 class Listing < ActiveRecord::Base
-end
+  has_many :hosts :reservations
+  end
