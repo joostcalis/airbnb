@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+cabin1 = Listing.create({ 
+	title: "Beautiful cabin in the woods", 
+	location: "Fjorddersonn, Norway", 
+	price: 139, 
+	description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, dolore, doloremque! Tempore architecto laboriosam earum fugit, eligendi maxime! Quas perferendis praesentium libero sapiente est deserunt cumque assumenda pariatur modi laborum!"})
