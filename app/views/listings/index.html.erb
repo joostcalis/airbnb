@@ -3,16 +3,16 @@
 <div class="table">
 	<div class="row">
 		<div class="col-md-4 l-image">
-			<%= image_tag 'default.jpg' %>
+			<%= image_tag("default.jpg") %>
 		</div>
 		<div class="col-md-8 l-main">
 			<h4 class="l-title"><%= listing.title %></h4>
 			<h4 class="l-location"><%= listing.location %></h4>
 			<p class="l-description"><%= listing.description %></p>
-			<p class="l-available">Available from 15/20/2014 to 16/8/2015</p>
+			<p class="l-available">Available from <%= listing.start_available %> until <%=listing.end_available %></p>
 			<h4 class="l-price"><sup>&euro;</sup><%= listing.price %> <sup>per night</sup></h4>
 		</div>
-		<button class="l-button">Book now</button>
+		<button class="l-button"><%= link_to "Check out this cabin", listing %></button>
 	</div>
 </div>
 

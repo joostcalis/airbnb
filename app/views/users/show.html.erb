@@ -1,5 +1,65 @@
-<h1>Dit is de show pagina van users!</h1>
+<div class="table">
+	<div class="row">
+		<!-- Begin kolom Reservations -->
+		<section class="col-md-6 user_info">
+			<h2 class="col-header"><%= @user.firstname%> <%=@user.lastname%></h2>
+			<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
+			<div>
+				<h4>First Name: <%= @user.firstname %></h4>
+				<h4>Last Name: <%= @user.lastname %></h4>
+				<h4>email: <%= @user.email %></h4>
+				<h4>city: <%= @user.city %></h4>	
+				<button class="l-button button-text">Edit</button>
+			</div>
+		</section>
 
-<h1><%= @user.firstname %></h1>
-<h2><%= @user.lastname %></h2>
-<h2><%= @user.city %></h2>
+		<section class="col-md-6 my_listings">
+
+			<h2 class="col-header"> My reserverations</h2>
+
+			<% @user.reservations.each do |r| %>
+			
+			<table>
+				<tr>
+					<td class="cabinthumb">
+				  		<img src="default.jpg">
+					</td>
+					<td class="cabintext">
+					    <h5></h5>
+						<h5></h5>
+					    <button class="l-button button-text">- Remove</button>
+				 	</td>
+				 </tr>
+			</table>
+			
+			<% end %>
+
+		<!-- Begin kolom Cabins -->
+
+			<h2 class="col-header">My Cabins</h2>
+			
+			<button class="addalisting button-text"><p>+ Add a new listing<p></button>
+			
+			<% @user.listings.each do |listing| %>
+			
+			<table>
+				<tr>
+					<td class="cabinthumb">
+				  		<img src="default.jpg">
+					</td>
+					<td class="cabintext">
+					    <h5><%= listing.title %></h5>
+						<h5><%= listing.location %></h5>
+					    <button class="l-button button-text">- Remove</button>
+				 	</td>
+				 </tr>
+			</table>
+			<% end %>
+
+
+
+		</section>
+	
+	</div><!-- end of guest and host section -->
+
+</div><!-- end table div -->
