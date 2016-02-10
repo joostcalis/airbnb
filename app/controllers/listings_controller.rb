@@ -2,7 +2,7 @@ class ListingsController < ApplicationController
   def index
     @listings = Listing.all
   end
-  
+
   def new
     @listing = Listing.new
   end
@@ -17,6 +17,8 @@ class ListingsController < ApplicationController
 
   def show
     	@listing = Listing.find(params[:id])
+      @reservation = Reservation.new
+      @reservation.listing_id = @listing.id
   	end
 
   def destroy
