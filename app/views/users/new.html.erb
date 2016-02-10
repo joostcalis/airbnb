@@ -1,37 +1,24 @@
 <%= form_for(@user) do |f| %>
-  <div class="form-group">
-    <%= f.label :firstname%>
-    <%= f.text_field :firstname, class: 'form-control' %>
-  </div>
+ <div class="form-group">
+   <%= f.label :firstname%>
+   <%= f.text_field :firstname, class: 'form-control' %>
+ </div>
 
-  <div class="form-group">
-    <%= f.label :lastname %>
-    <%= f.text_field :lastname, class: 'form-control', rows: 4 %>
-  </div>
+ <div class="form-group">
+   <%= f.label :lastname %>
+   <%= f.text_field :lastname, class: 'form-control', rows: 4 %>
+ </div>
 
-  <div class="form-group">
-    <%= f.label :city %>
-    <%= f.text_field :city, class: 'form-control' %>
-  </div>
+ <div class="form-group">
+   <%= f.label :city %>
+   <%= f.text_field :city, class: 'form-control' %>
+ </div>
 
-  <div class="form-group">
-    <%= f.label :email %>
-    <%= f.text_field :email, class: 'form-control' %>
-  </div>
-
-  <div class="well">
-    <%= f.fields_for(:guest) do |d| %>
-      <div class="form-group">
-        <%= d.hidden_field :user_id %>
-      </div>
-      <% end %>
-      <div class="well">
-        <%= f.fields_for(:host) do |h| %>
-          <div class="form-group">
-            <%= h.hidden_field :user_id %>
-          </div>
-          <div class="form-group">
-    <%= f.submit "Create Account", class: 'btn btn-lg btn-success' %>
-  </div>
-          <% end %>
-          <% end %>
+ <div class="form-group">
+   <%= f.label :email %>
+   <%= f.text_field :email, class: 'form-control' %>
+ </div>
+ <div class="form-group">
+   <%= f.submit "Create Account", class: 'btn btn-lg btn-success' %>
+ </div>
+ <% end %>
