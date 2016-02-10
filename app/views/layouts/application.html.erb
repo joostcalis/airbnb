@@ -7,19 +7,22 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 	<!-- Start navigation -->
 	<nav>
 		<ul>
-			<li>Sign up</li>
+			<li><%= link_to 'Sign up', @host %></li>
 			<li>Log in</li>
 			<li>Search</li>
 		</ul>
 	</nav>
 	<!-- Landing -->
 	<header class="jumbotron">
-		<h1 class="title">Fancy a visit?</h1>
-		<h2>Book now at Airbnb.com</h2>
+		<h1><a href="index.html">Cabin Fever</a></h1>
+		<h2>Fancy a visit? Book now</h2>
 	</header>
+
+
 	<!-- Start content -->
 	<section class="container">
 
@@ -30,38 +33,43 @@
 
 
 	</section><!-- End of container fluid -->
+
+
+
+
+
 	<footer>
 		<div class="row footer-row">
-			<div class="col-md-4 footer-col">
-				<h4><strong>Airbnb.com</strong></h4>
-				<ul>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-				</ul>
+			<div class="col-md-3 footer-col">
+				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
+				<p>Michael</p>
+				<p>michael@gmail.com</p>
+				<p>06 224 88 938</p>
+				<p>Amsterdam</p>
 			</div>
-			<div class="col-md-4 footer-col">
-				<h4><strong>Ander kopje hier</strong></h4>
-				<ul>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-					<li>Link hier</li>
-				</ul>
+			<div class="col-md-3 footer-col">
+				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
+				<p>Joost</p>
+				<p>michael@gmail.com</p>
+				<p>06 224 88 938</p>
+				<p>Amsterdam</p>
 			</div>
-			<div class="col-md-4 footer-col">
-			<h4><strong>Adres</strong></h4>
-				<ul>
-					<li>Weetikveellaan 1234</li>
-					<li>Amsterdam</li>
-				</ul>
+			<div class="col-md-3 footer-col">
+				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
+				<p>Tom</p>
+				<p>michael@gmail.com</p>
+				<p>06 224 88 938</p>
+				<p>Amsterdam</p>
+			</div>
+			<div class="col-md-3 footer-col">
+				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
+				<p>Tjin</p>
+				<p>michael@gmail.com</p>
+				<p>06 224 88 938</p>
+				<p>Amsterdam</p>
 			</div>
 		</div>
+
 		<div class="social row">
 			<ul>
 				<li>facebook</li>
@@ -72,5 +80,6 @@
 			</ul>
 		</div>	
 	</footer>
+
 </body>
 </html>
