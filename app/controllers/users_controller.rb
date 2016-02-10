@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
+    @user.build_guest
+    @user.build_host
   end
   def create
     if @user = User.create(user_params)
@@ -17,6 +19,13 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:firstname, :lastname, :city)
+    params.require(:user).permit(:firstname, :lastname, :city, :email,
+    guest_attributes: [
+      :user_id
+      ],
+      host_attributes: [
+        :user_id
+        ]
+      )
   end
 end

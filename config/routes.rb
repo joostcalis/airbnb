@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   root 'listings#index'
   resources :listings
   resources :users
+  resources :guests
+  resources :hosts
+  resources :reservations
 
 
   # Example of regular route:
