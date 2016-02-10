@@ -1,46 +1,31 @@
-<div class="table">
-	<section class="row"><!-- start content -->
-
-​		<div class="col-md-6 left-column">
+<section class="table">
+	<div class="row"><!-- start content -->
 
 
-
-						<h2>photos of the cabinet inside, outside and the outside view from the cabinet</h2>
-						<img src="0pic.jpg" alt="wood cabin1" style="width:200px;height:200px;">
-						<img src="1stpic.jpeg" alt="wood cabin2" style="width:200px;height:200px;">
-						<img src="1stpic.jpeg" alt="wood cabin2" style="width:200px;height:200px;">
-						<img src="1stpic.jpeg" alt="wood cabin2" style="width:200px;height:200px;">
-
-
-
+		<div class="col-md-6 left-column padding">
+			<!-- Left column -->
+			<img class="max-width margin-bottom" src="http://tinyurl.com/gpas93q">
+			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
+			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
+			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
+			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
 
 
+		</div><!-- end of left column -->
+		
+		<div class="col-md-6 right-column padding border-left">
+			<!-- Right column -->
+			<h2><%= @listing.title %></h2>
+			<h3><%= @listing.location %></h3>
+			<p><%= @listing.description %></p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio numquam maiores dolore, omnis non! Sequi tempore, inventore soluta nulla, illo blanditiis voluptatibus, magnam quisquam alias sunt quidem fuga! Hic, labore?</p>
+			<h3>&euro; <%= @listing.price %> per day</h3>
+			
+			<button class="l-button button-text"> + Make the reservation</button>
 
-​
+			<iframe class="google_maps margin-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57129.97684606856!2d10.368723123235915!3d63.41871906942268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319747037e53%3A0xbf7c8288f3cf3d4!2sTrondheim%2C+Noorwegen!5e0!3m2!1snl!2snl!4v1455126124522"</iframe>
+​		</div><!-- end of right column -->
+	
 
-					</div><!-- end of left column -->
-
-					<div class="col-md-6 right-column">
-
-​
-
-						<!-- Everything in here will be in the right column -->
-
-						<h2>This is the right</h2>
-
-
-
-​
-
-​
-
-					</div><!-- end of right column -->
-
-​
-
-
-
-​
-
-			</section><!-- end of user section -->
-</div><!-- end table div -->
+	</div><!-- end of user section -->
+</section><!-- end table div -->

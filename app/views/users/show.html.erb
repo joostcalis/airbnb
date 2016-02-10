@@ -1,65 +1,44 @@
-<div class="table">
+<section class="table">
 	<div class="row">
 		<!-- Begin kolom Reservations -->
-		<section class="col-md-6 user_info">
-			<h2 class="col-header"><%= @user.firstname%> <%=@user.lastname%></h2>
-			<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-			<div>
+		<div class="col-md-6 padding">
+			<h2>My Profile</h2>
+			<img class="profile_picture" src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
 				<h4>First Name: <%= @user.firstname %></h4>
 				<h4>Last Name: <%= @user.lastname %></h4>
 				<h4>email: <%= @user.email %></h4>
 				<h4>city: <%= @user.city %></h4>	
-				<button class="l-button button-text">Edit</button>
-			</div>
-		</section>
+				<button class="l-button button-text margin-top-s">Edit Profile</button>
+				<button class="l-button button-text margin-top-s">Delete Profile</button>
+		</div>
 
-		<section class="col-md-6 my_listings">
+		<div class="col-md-6 padding border-left">
 
-			<h2 class="col-header"> My reserverations</h2>
-
-			<% @user.reservations.each do |r| %>
-			
-			<table>
-				<tr>
-					<td class="cabinthumb">
-				  		<img src="default.jpg">
-					</td>
-					<td class="cabintext">
-					    <h5></h5>
-						<h5></h5>
-					    <button class="l-button button-text">- Remove</button>
-				 	</td>
-				 </tr>
-			</table>
-			
-			<% end %>
+			<h2>My Reserverations</h2>
 
 		<!-- Begin kolom Cabins -->
 
-			<h2 class="col-header">My Cabins</h2>
+			<h2>My Cabins</h2>
 			
-			<button class="addalisting button-text"><p>+ Add a new listing<p></button>
+			<button class="add_listing button-text margin-top-s"><p>+ Add a new listing<p></button>
 			
 			<% @user.listings.each do |listing| %>
-			
-			<table>
+			<table class="margin-top-s">
 				<tr>
-					<td class="cabinthumb">
-				  		<img src="default.jpg">
+					<td>
+				  		<img class="listing-thumb" src="http://cdnstatic.visualizeus.com/thumbs/55/e4/architecture,cabin,wood-55e4e590aa729d6b9fa2f631fe58fcb8_h.jpg">
 					</td>
 					<td class="cabintext">
 					    <h5><%= listing.title %></h5>
 						<h5><%= listing.location %></h5>
-					    <button class="l-button button-text">- Remove</button>
+					    <button class="s-button">- Remove</button>
 				 	</td>
 				 </tr>
 			</table>
 			<% end %>
 
-
-
-		</section>
+		</div>
+	
 	
 	</div><!-- end of guest and host section -->
-
-</div><!-- end table div -->
+</section><!-- end table div -->
