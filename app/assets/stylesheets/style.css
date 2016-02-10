@@ -1,11 +1,19 @@
+body {
+	background: #fdfff2;
+	background: -moz-linear-gradient(45deg, #fdfff2 0%, #e8e6d0 100%);
+	background: -webkit-linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
+	background: linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff2', endColorstr='#e8e6d0',GradientType=1);
+}
+
 header {
 	padding-left: 40px;
+	text-align: center;
 }
 
 nav {
 	height: 80px;
-	background-color: #52AD52;
-	border-bottom: 1px solid black;
+	background-color: black;
 	color: white;
 	padding-top: 30px;
 }
@@ -27,6 +35,14 @@ footer {
 
 .footer-col {
 	padding: 50px;
+	text-align: center;
+}
+
+.footer-col img {
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 40px;
 }
 
 .social li {

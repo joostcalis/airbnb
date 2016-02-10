@@ -41,6 +41,7 @@
 .l-main {
 	padding: 40px 40px 0px 40px;
 	line-height: 26px;
+	font-family: serif;
 }
 .l-button {
 	border: 1px solid black;
@@ -53,12 +54,4 @@
 	margin-top: auto;
 	margin-bottom: 40px;
 	margin-left: 40px;
-}
-body {
-	background: #fdfff2;
-	background: -moz-linear-gradient(45deg, #fdfff2 0%, #e8e6d0 100%);
-	background: -webkit-linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
-	background: linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff2', endColorstr='#e8e6d0',GradientType=1);
-	font-family: serif;
 }
