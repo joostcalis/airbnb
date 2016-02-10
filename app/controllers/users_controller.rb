@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
+    @user.build_guest
+    @user.build_host
   end
   def create
     if @user = User.create(user_params)
