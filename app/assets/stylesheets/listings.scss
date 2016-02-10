@@ -1,3 +1,64 @@
 // Place all the styles related to the listings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.l-title {
+	font-size: 32px;
+}
+.l-location {
+	font-size: 32px;
+}
+.l-description {
+	font-size: 14px;
+	margin-top: 16px;
+}
+.l-price {
+	font-size: 32px;
+}
+.l-image img{
+	max-width: 100%;
+}
+.l-image {
+	border-right: 1px solid #000;
+	padding: 40px;
+}
+
+.table {
+	width: 1000px;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	transition: 0.3s ease-in-out;
+}
+
+.table:hover {
+	background: #e8e6d0;
+	transition: 0.3s ease-in-out;
+}
+
+.l-main {
+	padding: 40px 40px 0px 40px;
+	line-height: 26px;
+}
+.l-button {
+	border: 1px solid black;
+	padding: 10px;
+	background: none;
+	font-family: helvetica;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	margin-top: auto;
+	margin-bottom: 40px;
+	margin-left: 40px;
+}
+body {
+	background: #fdfff2;
+	background: -moz-linear-gradient(45deg, #fdfff2 0%, #e8e6d0 100%);
+	background: -webkit-linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
+	background: linear-gradient(45deg, #fdfff2 0%,#e8e6d0 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff2', endColorstr='#e8e6d0',GradientType=1);
+	font-family: serif;
+}

@@ -3,16 +3,17 @@ header {
 }
 
 nav {
-	height: 60px;
-	background-color: #FE585C;
+	height: 80px;
+	background-color: #52AD52;
+	border-bottom: 1px solid black;
 	color: white;
-	padding-top: 20px;
+	padding-top: 30px;
 }
 
 nav li {
 	display: inline-block;
-	font-size: 18px;
-	font-weight: 700;
+	font-size: 14px;
+	font-weight: 400;
 	color: #fff;
 	text-transform: uppercase;
 	padding-right: 30px;
@@ -22,10 +23,6 @@ footer {
 	background-color: #111;
 	color: white;
 	padding: 50px;
-}
-
-section {
-	background-color: white;
 }
 
 .footer-col {
