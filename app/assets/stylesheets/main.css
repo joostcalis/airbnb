@@ -1,8 +1,8 @@
 body {
 	background: #E1F1E2;
-	background-image: image-url("background3.jpg");
+	background-image: image-url("background2.jpg");
 	background-repeat: no-repeat;
-	background-position: top;
+	background-position: fixed;
 	background-size: 100%;
 }
 
@@ -10,11 +10,11 @@ body {
 
 header {
 	text-align: center;
-	margin-bottom: 60px;
+	margin-bottom: 500px;
 }
 
 header img {
-	margin-top: 110px;
+	margin-top: 80px;
 	width: 580px;
 }
 
