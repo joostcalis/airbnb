@@ -23,6 +23,7 @@ class ListingsController < ApplicationController
     	@listing = Listing.find(params[:id])
       @reservation = Reservation.new
       @reservation.listing_id = @listing.id
+      @user = @listing.user
   	end
 
   def destroy
