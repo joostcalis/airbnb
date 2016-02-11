@@ -2,7 +2,6 @@ body {
 	background: #E1F1E2;
 	background-image: image-url("background2.jpg");
 	background-repeat: no-repeat;
-	background-position: fixed;
 	background-size: 100%;
 }
 
