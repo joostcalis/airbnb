@@ -1,4 +1,4 @@
-<% @users.each do |user| %>
+<% @listings.each do |user| %>
 <% user.listings.each do |listing| %>
 
 <div class="table">
@@ -16,5 +16,6 @@
 		<button class="l-button"><%= link_to "Check out this cabin", user_listing_path(listing.user_id, listing) %></button>
 	</div>
 </div>
+
 <% end %>
 <% end %>

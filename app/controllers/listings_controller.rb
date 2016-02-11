@@ -2,7 +2,7 @@ class ListingsController < ApplicationController
   before_action :load_user
 
   def index
-    @listings = Listing.all
+    @listings = @user.listings
   end
 
   def new
