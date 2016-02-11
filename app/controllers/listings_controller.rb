@@ -1,8 +1,8 @@
 class ListingsController < ApplicationController
-  before_action :load_user
+
 
   def index
-    @listings = @user.listings
+    @listings = Listing.all
   end
 
   def new
@@ -37,10 +37,7 @@ class ListingsController < ApplicationController
 
   private
 
-  def load_user
-    @user = User.find(params[:user_id])
-  end
-
+  
   def listing_params
     params.require(:listing).permit(:title, :price, :location, :description, :start_available, :end_available)
   end
