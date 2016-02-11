@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     end
   end
   def show
-    	@user = User.joins(:listings).find(params[:id])
+    	@user = User.find(params[:id])
   end
 
 
