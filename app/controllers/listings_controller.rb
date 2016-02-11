@@ -1,4 +1,6 @@
 class ListingsController < ApplicationController
+  before_action :load_user
+
   def index
     @listings = Listing.all
   end
@@ -8,7 +10,9 @@ class ListingsController < ApplicationController
   end
 
   def create
-    if @listing = Listing.create(listing_params)
+    @listing = Listing.new(listing_params)
+    @listing.user = @user
+    if @listing.save
       redirect_to root_path
     else
       render :new
@@ -32,7 +36,11 @@ class ListingsController < ApplicationController
 
   private
 
+  def load_user
+    @user = User.find(params[:user_id])
+  end
+
   def listing_params
-    params.require(:listing).permit(:title, :price, :location, :description)
+    params.require(:listing).permit(:title, :price, :location, :description, :start_available, :end_available)
   end
 end

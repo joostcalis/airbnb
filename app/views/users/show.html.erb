@@ -20,7 +20,7 @@
 
 			<h2>My Cabins</h2>
 			
-			<button class="add_listing button-text margin-top-s"><p>+ Add a new listing<p></button>
+			<button class="add_listing button-text margin-top-s"><p><%= link_to "Add a cabin", new_user_listing_path(@user) %><p></button>
 			
 			<% @user.listings.each do |listing| %>
 			<table class="margin-top-s">
