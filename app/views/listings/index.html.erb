@@ -1,1 +1,19 @@
-<%= render @listings %>
+<% @listings.each do |listing| %>
+
+<section class="listing-card">
+	<div class="row">
+		<div class="col-md-4 padding border-right">
+			<%= image_tag "default.jpg", class: "max-width" %>
+		</div>
+		<div class="col-md-8 padding listing-description">
+			<h2><%= listing.title %></h2>
+			<h3><%= listing.location %></h3>
+			<h5><%= listing.description %></h5>
+			<h5>Available from <%= listing.start_available %> until <%=listing.end_available %></h5>
+			<h3 class="l-price"><sup>&euro;</sup><%= listing.price %> <sup>per night</sup></h4>
+        <button class="l-button"><%= link_to "Check out this cabin", listing %></button>
+		</div>
+	</div>
+</section>
+
+<% end %>

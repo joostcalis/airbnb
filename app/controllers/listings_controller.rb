@@ -1,8 +1,8 @@
 class ListingsController < ApplicationController
-  before_action :load_user
+
 
   def index
-    @listings = @user.listings
+    @listings = Listing.all
   end
 
   def new
@@ -11,7 +11,7 @@ class ListingsController < ApplicationController
 
   def create
     @listing = Listing.new(listing_params)
-    @listing.user = @user
+    @listing.user_id = current_user.id
     if @listing.save
       redirect_to root_path
     else
@@ -23,7 +23,6 @@ class ListingsController < ApplicationController
     	@listing = Listing.find(params[:id])
       @reservation = Reservation.new
       @reservation.listing_id = @listing.id
-      @user = @listing.user
   	end
 
   def destroy
@@ -37,9 +36,6 @@ class ListingsController < ApplicationController
 
   private
 
-  def load_user
-    @user = User.find(params[:user_id])
-  end
 
   def listing_params
     params.require(:listing).permit(:title, :price, :location, :description, :start_available, :end_available)
