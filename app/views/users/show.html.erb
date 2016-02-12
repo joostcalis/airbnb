@@ -7,21 +7,37 @@
 				<h4>First Name: <%= @user.firstname %></h4>
 				<h4>Last Name: <%= @user.lastname %></h4>
 				<h4>email: <%= @user.email %></h4>
-				<h4>city: <%= @user.city %></h4>	
+				<h4>city: <%= @user.city %></h4>
 				<button class="l-button button-text margin-top-s">Edit Profile</button>
 				<button class="l-button button-text margin-top-s">Delete Profile</button>
 		</div>
 
 		<div class="col-md-6 padding border-left">
 
+			<% if @reservations.present? %>
+
 			<h2>My Reserverations</h2>
+
+			<% @reservations.each do |reservation| %>
+				<table class="margin-top-s">
+					<tr>
+						<td class="cabintext">
+							<h5><%= reservation.listing.title %></h5>
+					    <h5><%= reservation.start_date %></h5>
+							<h5><%= reservation.end_date %></h5>
+					 	</td>
+					 </tr>
+				</table>
+				<% end %>
+				<% end %>
+
 
 		<!-- Begin kolom Cabins -->
 
 			<h2>My Cabins</h2>
-			
-			<button class="add_listing button-text margin-top-s"><p><%= link_to "Add a cabin", new_user_listing_path(@user) %><p></button>
-			
+
+			<button class="add_listing button-text margin-top-s"><p><%= link_to "Add a cabin", new_listing_path %><p></button>
+
 			<% @user.listings.each do |listing| %>
 			<table class="margin-top-s">
 				<tr>
@@ -38,7 +54,7 @@
 			<% end %>
 
 		</div>
-	
-	
+
+
 	</div><!-- end of guest and host section -->
 </section><!-- end table div -->

@@ -23,9 +23,22 @@
 	<nav>
 		<ul>
 			<li><%= image_tag "logo-s.png", class: "logo-small" %></li>
-			<li><%= link_to "Sign up", new_user_path%></li>
-			<li>Log in</li>
-			<li>Search</li>
+    <% if user_signed_in? %>
+      <li><%= current_user.firstname %></li>
+    <% else %>
+      <li><%= link_to "Sign up", new_user_registration_path%></li>
+    <% end %>
+    <% if user_signed_in? %>
+      <li>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete  %>
+      </li>
+    <% else %>
+      <li><%= link_to "Log in", new_user_session_path%></li>
+    <% end %>
+    <% if user_signed_in? %>
+      <li><%=link_to "Go to my profile page", user_path(current_user)%></li>
+      <% end %>
+			
 		</ul>
 	</nav>
 	<!-- Landing -->
@@ -116,7 +129,7 @@
 				<li>pinterest</li>
 				<li>google plus</li>
 			</ul>
-		</div>	
+		</div>
 	</footer>
 
 </body>
