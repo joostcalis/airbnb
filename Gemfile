@@ -50,3 +50,7 @@ end
 gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass'
+
+gem 'carrierwave'
+
+gem "mini_magick"
