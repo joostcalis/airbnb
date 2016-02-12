@@ -21,8 +21,6 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio numquam maiores dolore, omnis non! Sequi tempore, inventore soluta nulla, illo blanditiis voluptatibus, magnam quisquam alias sunt quidem fuga! Hic, labore?</p>
 			<h3>&euro; <%= @listing.price %> per day</h3>
 
-			<button class="l-button button-text"> + Make the reservation</button>
-
 
 ​		<%= form_for(@reservation) do |f| %>
  <div class="form-group">
@@ -35,7 +33,7 @@
 	 <%= f.date_select :end_date, class: 'form-control', rows: 4 %>
  </div>
  <div class="form-group">
-	 <%= f.submit "make booking", class: 'btn btn-lg btn-success' %>
+	 <%= f.submit "+ Make the reservation", class: 'submit-button button-text full-width' %>
  </div>
  <% end %>
  <iframe class="google_maps margin-top" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57129.97684606856!2d10.368723123235915!3d63.41871906942268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319747037e53%3A0xbf7c8288f3cf3d4!2sTrondheim%2C+Noorwegen!5e0!3m2!1snl!2snl!4v1455126124522"</iframe>

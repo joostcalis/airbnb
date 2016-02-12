@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to Airbnb</title>
+  <title>Welcome to Cabin Fever</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,7 +11,7 @@
     var TransitionEvents = [];
     var $bg = $("#bg");
 
-    Transitions.push(new $.SParallax.Transition("top", 0, -25, "px", $bg, 0, 1));
+    Transitions.push(new $.SParallax.Transition("top", 0, -50, "px", $bg, 0, 2));
     $.SParallax(Transitions, TransitionEvents);
 	});
 </script>
@@ -23,7 +23,7 @@
 	<nav>
 		<ul>
 			<li><%= image_tag "logo-s.png", class: "logo-small" %></li>
-
+			<li><%= link_to "Home", root_path %></li>
 		    <% if user_signed_in? %>
 		      <li>Welcome <%= current_user.firstname %></li>
 		    <% else %>

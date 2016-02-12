@@ -4,7 +4,7 @@ body {
 
 #bg {
     position: fixed;
-    height: 450px;
+    height: 480px;
     width: 100vw;
     z-index: -1;
     background: image-url('background2.jpg') no-repeat;
@@ -15,11 +15,11 @@ body {
 
 header {
 	text-align: center;
-	margin-bottom: 140px;
+	margin-bottom: 200px;
 }
 
 header img {
-	margin-top: 220px;
+	margin-top: 180px;
 	width: 580px;
 }
 

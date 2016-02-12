@@ -4,10 +4,10 @@
 		<div class="col-md-6 padding">
 			<h2>My Profile</h2>
 			<img class="profile_picture" src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-				<h4>First Name: <%= @user.firstname %></h4>
-				<h4>Last Name: <%= @user.lastname %></h4>
-				<h4>email: <%= @user.email %></h4>
-				<h4>city: <%= @user.city %></h4>
+				<p>First Name: <%= @user.firstname %></p>
+				<p>Last Name: <%= @user.lastname %></p>
+				<p>email: <%= @user.email %></p>
+				<p>city: <%= @user.city %></p>
 				<button class="l-button button-text margin-top-s">Edit Profile</button>
 				<button class="l-button button-text margin-top-s">Delete Profile</button>
 		</div>
@@ -42,12 +42,12 @@
 			<table class="margin-top-s">
 				<tr>
 					<td>
-				  		<img class="listing-thumb" src="http://cdnstatic.visualizeus.com/thumbs/55/e4/architecture,cabin,wood-55e4e590aa729d6b9fa2f631fe58fcb8_h.jpg">
+				  		<%= image_tag listing.image.thumb, class: "listing-thumb"%>
 					</td>
 					<td class="cabintext">
 					    <h5><%= listing.title %></h5>
 						<h5><%= listing.location %></h5>
-					    <button class="s-button">- Remove</button>
+					    <!-- <button class="s-button">- Remove</button> -->
 				 	</td>
 				 </tr>
 			</table>
