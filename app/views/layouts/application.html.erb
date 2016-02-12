@@ -5,9 +5,20 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script>
+    $(document).ready(function () {
+    var Transitions = [];
+    var TransitionEvents = [];
+    var $bg = $("#bg");
+
+    Transitions.push(new $.SParallax.Transition("top", 0, -30, "px", $bg, 0, 1));
+    $.SParallax(Transitions, TransitionEvents);
+	});
+</script>
 </head>
 <body>
-
+<!-- Parallax background -->
+<div id="bg"></div>
 	<!-- Start navigation -->
 	<nav>
 		<ul>
@@ -42,8 +53,6 @@
 
 
 <%= yield %>
-
-
 
 
 
