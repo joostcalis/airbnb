@@ -4,7 +4,7 @@
 
 		<div class="col-md-6 left-column padding">
 			<!-- Left column -->
-			<img class="max-width margin-bottom" src="http://tinyurl.com/gpas93q">
+			<%= image_tag @listing.image.listing_size,  class: "max-width margin-bottom" %>
 			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
 			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
 			<img class="listing-image-thumb" src="http://tinyurl.com/gpas93q">
@@ -28,7 +28,7 @@
 
 
 
-<div>
+
 						<%= form_for(@reservation) do |f| %>
 						 <div class="form-group">
 						   <%= f.label :start_date%>
@@ -43,7 +43,7 @@
 						   <%= f.submit "make booking", class: 'btn btn-lg btn-success' %>
 						 </div>
 						 <% end %>
-					 </div>
+
 
 
 
