@@ -5,9 +5,20 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script>
+    $(document).ready(function () {
+    var Transitions = [];
+    var TransitionEvents = [];
+    var $bg = $("#bg");
+
+    Transitions.push(new $.SParallax.Transition("top", 0, -50, "px", $bg, 0, 1));
+    $.SParallax(Transitions, TransitionEvents);
+	});
+</script>
 </head>
 <body>
-
+<!-- Parallax background -->
+<div id="bg"></div>
 	<!-- Start navigation -->
 	<nav>
 		<ul>
@@ -43,8 +54,35 @@
 
 <%= yield %>
 
+<section class="listing-card">
+	<div class="row">
+		<div class="col-md-4 padding border-right">
+			<%= image_tag "default.jpg", class: "max-width" %>
+		</div>
+		<div class="col-md-8 padding listing-description">
+			<h2>Cabin beauty</h2>
+			<h3>Amsterdam</h3>
+			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia nihil nobis perferendis impedit sapiente tempore placeat sed, debitis accusamus, totam inventore, explicabo eum facere amet tempora voluptates molestias est.</h5>
+			<h3 class="l-price"><sup>&euro;</sup>50 <sup>per night</sup></h4>
+        <button class="l-button">Check this cabin</button>
+		</div>
+	</div>
+</section>
 
-
+<section class="listing-card">
+	<div class="row">
+		<div class="col-md-4 padding border-right">
+			<%= image_tag "default.jpg", class: "max-width" %>
+		</div>
+		<div class="col-md-8 padding listing-description">
+			<h2>Cabin beauty</h2>
+			<h3>Amsterdam</h3>
+			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia nihil nobis perferendis impedit sapiente tempore placeat sed, debitis accusamus, totam inventore, explicabo eum facere amet tempora voluptates molestias est.</h5>
+			<h3 class="l-price"><sup>&euro;</sup>50 <sup>per night</sup></h4>
+        <button class="l-button">Check this cabin</button>
+		</div>
+	</div>
+</section>
 
 
 
