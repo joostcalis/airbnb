@@ -23,22 +23,25 @@
 	<nav>
 		<ul>
 			<li><%= image_tag "logo-s.png", class: "logo-small" %></li>
-    <% if user_signed_in? %>
-      <li><%= current_user.firstname %></li>
-    <% else %>
-      <li><%= link_to "Sign up", new_user_registration_path%></li>
-    <% end %>
-    <% if user_signed_in? %>
-      <li>
-          <%= link_to "Log out", destroy_user_session_path, method: :delete  %>
-      </li>
-    <% else %>
-      <li><%= link_to "Log in", new_user_session_path%></li>
-    <% end %>
-    <% if user_signed_in? %>
-      <li><%=link_to "Go to my profile page", user_path(current_user)%></li>
-      <% end %>
-			
+
+		    <% if user_signed_in? %>
+		      <li>Welcome <%= current_user.firstname %></li>
+		    <% else %>
+		      <li><%= link_to "Sign up", new_user_registration_path%></li>
+		    <% end %>
+
+		    <% if user_signed_in? %>
+		      <li><%=link_to "My profile", user_path(current_user)%></li>
+		      <li><%=link_to "+ Add a cabin", new_listing_path(current_user)%></li>
+		    <% end %>	
+
+		    <% if user_signed_in? %>
+		      <li><%= link_to "Log out", destroy_user_session_path, method: :delete  %></li>
+		    <% else %>
+		      <li><%= link_to "Log in", new_user_session_path%></li>
+		   	<% end %>
+
+
 		</ul>
 	</nav>
 	<!-- Landing -->
