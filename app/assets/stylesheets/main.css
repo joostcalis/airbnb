@@ -4,10 +4,10 @@ body {
 
 #bg {
     position: fixed;
-    height: 600px;
+    height: 480px;
     width: 100vw;
     z-index: -1;
-    background: image-url('background4.jpg');
+    background: image-url('background2.jpg') no-repeat;
     background-size: cover;
 }
 
