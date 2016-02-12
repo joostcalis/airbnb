@@ -8,8 +8,18 @@
 .l-button:hover {
 	background-color: #E1F1E2;
 	transition: 0.3s ease-in-out;
-
 }
+
+.submit-button {
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	background: none;
+	background-color: #1ea3c9;
+	color: white;
+	font-weight: 700;
+}
+
 
 .add_listing {
 	height: 120px;
@@ -47,4 +57,12 @@
 	font-weight: 200;
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
+}
+
+.l-form {
+	border: 1px solid #000;
+	width: 100%;
+	padding: 10px;
+	border-radius: 4px;
+	background: none;
 }
