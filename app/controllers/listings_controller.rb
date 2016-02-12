@@ -20,10 +20,10 @@ class ListingsController < ApplicationController
   end
 
   def show
-    	@listing = Listing.find(params[:id])
-      @reservation = Reservation.new
-      @reservation.listing_id = @listing.id
-  	end
+  	@listing = Listing.find(params[:id])
+    @reservation = Reservation.new
+    session[:last_listing_id] = @listing.id
+	end
 
   def destroy
     @listing = Listing.find(params[:id])
