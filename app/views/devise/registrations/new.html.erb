@@ -1,41 +1,54 @@
-<h2>Sign up</h2>
+<section class="table padding">
+  <div class="row">
+    <!-- Logo with agreements etc -->
+    <div class="col-md-6 padding">
+        <h2>Logo</h2>
+    </div>
+    <!-- Sign up form -->
+    <div class="col-md-6 padding border-left">
 
-<%= form_for(resource, as: :user, url: registration_path(:user)) do |f| %>
-  <%= devise_error_messages! %>
+      <h2>Sign up</h2>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+      <%= form_for(resource, as: :user, url: registration_path(:user)) do |f| %>
+        <%= devise_error_messages! %>
+        <ul class="devise-input">
+          <li class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </li>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
+        <li class="field">
+          <%= f.label :password %>
+          <% if @minimum_password_length %>
+          <em>(<%= @minimum_password_length %> characters minimum)</em>
+          <% end %><br />
+          <%= f.password_field :password, autocomplete: "off" %>
+        </li>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-  <div class="field">
-    <%= f.label :firstname %><br />
-    <%= f.text_field :firstname %>
-  </div>
-  <div class="field">
-    <%= f.label :lastname %><br />
-    <%= f.text_field :lastname%>
-  </div>
-  <div class="field">
-    <%= f.label :city %><br />
-    <%= f.text_field :city%>
-  </div>
+        <li class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        </li>
+        <li class="field">
+          <%= f.label :firstname %><br />
+          <%= f.text_field :firstname %>
+        </li>
+        <li class="field">
+          <%= f.label :lastname %><br />
+          <%= f.text_field :lastname%>
+        </li>
+        <li class="field">
+          <%= f.label :city %><br />
+          <%= f.text_field :city%>
+        </li>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+        <li class="actions">
+          <%= f.submit "Sign up" %>
+        </li>
+      <% end %>
+      </ul>
 
-<%= render "devise/shared/links" %>
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</section>
