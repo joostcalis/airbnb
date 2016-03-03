@@ -1,0 +1,17 @@
+<%= form_for(@listing) do |f| %>
+
+    <div><h1><%= f.label :title %></h1>
+    <%= f.text_field :title %></div>
+
+    <div><h2><%= f.label :location %></h2>
+    <%= f.text_field :location %></div>
+
+    <div><h2><%= f.label :description %></h2>
+    <%= f.text_field :description %></div>
+
+    <div><h2><%= f.label :price %></h2>
+    <%= f.text_field :price %></div>
+
+      <%= f.submit "Save Post"%>
+      <%= f.submit "Cancel", @listing %>
+  <% end %>
