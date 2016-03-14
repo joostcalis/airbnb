@@ -5,19 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <script>
-    $(document).ready(function () {
-    var Transitions = [];
-    var TransitionEvents = [];
-    var $bg = $("#bg");
-
-    Transitions.push(new $.SParallax.Transition("top", 0, -50, "px", $bg, 0, 2));
-    $.SParallax(Transitions, TransitionEvents);
-	});
-</script>
 </head>
 <body>
-<!-- Parallax background -->
 <div id="bg"></div>
 	<!-- Start navigation -->
 	<nav>
@@ -65,43 +54,27 @@
 
 	<footer>
 		<div class="row footer-row">
-			<div class="col-md-3 footer-col">
-				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-				<p>Michael</p>
-				<p>michael@gmail.com</p>
-				<p>06 224 88 938</p>
+			<div class="col-md-6 footer-col">
+				<img class="footer-image" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAhwAAAAJGFhNTllMjJlLTlkNDUtNDZiNS1iOTVlLTVjOTM5NTY5ZGU3Zg.jpg">
+				<p>Joost Calis</p>
+				<p>joost_calis@hotmail.com</p>
+				<p>06 14 15 3020</p>
 				<p>Amsterdam</p>
+				<p><a href="https://www.linkedin.com/in/joost-calis-5a4b68116?authType=NAME_SEARCH&authToken=PIQh&locale=en_US&trk=tyah&trkInfo=clickedVertical%3Amynetwork%2CclickedEntityId%3A486605644%2CauthType%3ANAME_SEARCH%2Cidx%3A1-1-1%2CtarId%3A1457691494965%2Ctas%3Ajoost" target="_blank"><img class="linkedin" src="http://www.crowddd.com/images/linkedin-256.png"></a></p>
 			</div>
-			<div class="col-md-3 footer-col">
-				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-				<p>Joost</p>
-				<p>michael@gmail.com</p>
-				<p>06 224 88 938</p>
+			<div class="col-md-6 footer-col">
+				<img class="footer-image" src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAJWAAAAJGE1OGM1N2E1LWQzNDQtNDE2Yy04Y2M1LWI2N2QyM2M0ODAwYw.jpg">
+				<p>Tjin Au Yeung</p>
+				<p>auyeung.tjin@gmail.com</p>
+				<p>06 138 42 657</p>
 				<p>Amsterdam</p>
-			</div>
-			<div class="col-md-3 footer-col">
-				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-				<p>Tom</p>
-				<p>michael@gmail.com</p>
-				<p>06 224 88 938</p>
-				<p>Amsterdam</p>
-			</div>
-			<div class="col-md-3 footer-col">
-				<img src="https://d22r54gnmuhwmk.cloudfront.net/app-assets/global/default_user_icon-7a95ec473c1c41f6d020d32c0504a0ef.jpg">
-				<p>Tjin</p>
-				<p>michael@gmail.com</p>
-				<p>06 224 88 938</p>
-				<p>Amsterdam</p>
+				<p><a href="https://www.linkedin.com/in/tjin-au-yeung-b8748985" target="_blank"><img class="linkedin" src="http://www.crowddd.com/images/linkedin-256.png"></a></p>
 			</div>
 		</div>
 
 		<div class="social row">
 			<ul>
-				<li>facebook</li>
-				<li>twitter</li>
-				<li>instagram</li>
-				<li>pinterest</li>
-				<li>google plus</li>
+				<li>Build in Amsterdam using Ruby on Rails - 2016</li>
 			</ul>
 		</div>
 	</footer>
