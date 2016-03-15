@@ -22,7 +22,7 @@
 		    <% if user_signed_in? %>
 		      <li><%=link_to "My profile", user_path(current_user)%></li>
 		      <li><%=link_to "+ Add a cabin", new_listing_path(current_user)%></li>
-		    <% end %>	
+		    <% end %>
 
 		    <% if user_signed_in? %>
 		      <li><%= link_to "Log out", destroy_user_session_path, method: :delete  %></li>
@@ -74,7 +74,7 @@
 
 		<div class="social row">
 			<ul>
-				<li>Build in Amsterdam using Ruby on Rails - 2016</li>
+				<li>Build in Amsterdam using Ruby on Rails - 2016. Visit <a href="https://github.com/joostcalis/airbnb" class="git-link">GitHub</a> for more info. </li>
 			</ul>
 		</div>
 	</footer>
